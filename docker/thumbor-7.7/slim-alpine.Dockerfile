@@ -44,7 +44,7 @@ RUN set -eux \
         # numpy - https://github.com/beeyev/thumbor-s3-docker/pull/14
         "numpy==1.*,>=1.26.3" \
         # pycurl is required for thumbor
-        "pycurl==7.*,>=7.45.2" thumbor==7.7.* thumbor-aws==0.8.* tc_prometheus==2.* \
+        "pycurl==7.*,>=7.45.2" thumbor==7.7.* thumbor-aws==0.9.* tc_prometheus==2.* \
     ##
     ## Optional extensions
     ##

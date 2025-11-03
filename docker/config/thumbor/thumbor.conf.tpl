@@ -1059,6 +1059,12 @@ AWS_LOADER_S3_ENDPOINT_URL = '{{ AWS_LOADER_S3_ENDPOINT_URL }}'
 ## Defaults to: ''
 AWS_LOADER_ROOT_PATH = '{{ AWS_LOADER_ROOT_PATH | default('') }}'
 
+## AWS normalizer lambda
+## Defaults to: lambda path: unquote(path).lstrip("/")
+{% if AWS_NORMALIZER is defined %}
+AWS_NORMALIZER = {{ AWS_NORMALIZER }}
+{% endif %}
+
 ################################################################################
 
 

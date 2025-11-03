@@ -48,7 +48,7 @@ RUN set -eux \
         # remotecv is required for queued OpenCV processing
         "remotecv==5.*,>=5.1.8"  \
         # thumbor
-        thumbor[all]==7.7.* thumbor-aws==0.8.* tc_prometheus==2.*
+        thumbor[all]==7.7.* thumbor-aws==0.9.* tc_prometheus==2.*
 
 ARG TZ='UTC'
 ENV TZ=$TZ
