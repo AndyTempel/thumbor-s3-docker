@@ -43,7 +43,7 @@ jobs:
         versionMinor: [ '7.7' ]
     name: Build Test Docker Images / ${{ matrix.baseDist }}-test
     with:
-      DOCKER_REGISTRY_IMAGE: ghcr.io/AndyTempel/thumbor-s3:${{ matrix.baseDist }}-test
+      DOCKER_REGISTRY_IMAGE: ghcr.io/andytempel/thumbor-s3:${{ matrix.baseDist }}-test
       DOCKERFILE_PATH: ./docker/thumbor-${{ matrix.versionMinor }}/${{ matrix.baseDist }}.Dockerfile
       PLATFORMS: linux/amd64
     secrets: inherit

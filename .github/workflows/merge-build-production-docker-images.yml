@@ -26,9 +26,9 @@ jobs:
     name: Build Production Docker Images / ${{ matrix.versionMinor }}-${{ matrix.baseDist }}
     with:
       DOCKER_REGISTRY_IMAGE: |
-        ghcr.io/AndyTempel/thumbor-s3:${{ matrix.baseDist }}
-        ghcr.io/AndyTempel/thumbor-s3:${{ matrix.versionMinor }}-${{ matrix.baseDist }}
-        ghcr.io/AndyTempel/thumbor-s3:${{ matrix.versionMajor }}-${{ matrix.baseDist }}
+        ghcr.io/andytempel/thumbor-s3:${{ matrix.baseDist }}
+        ghcr.io/andytempel/thumbor-s3:${{ matrix.versionMinor }}-${{ matrix.baseDist }}
+        ghcr.io/andytempel/thumbor-s3:${{ matrix.versionMajor }}-${{ matrix.baseDist }}
         ksofttech/thumbor-s3:${{ matrix.baseDist }}
         ksofttech/thumbor-s3:${{ matrix.versionMinor }}-${{ matrix.baseDist }}
         ksofttech/thumbor-s3:${{ matrix.versionMajor }}-${{ matrix.baseDist }}
