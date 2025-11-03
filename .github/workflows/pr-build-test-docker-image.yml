@@ -15,6 +15,7 @@ jobs:
   initialization:
     name: Initialization
     runs-on: ubuntu-latest
+    environment: Workflows
     permissions:
       pull-requests: write
     if: contains(github.event.label.name, 'make-test-build')
